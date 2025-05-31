@@ -39,3 +39,6 @@ def biseccion(f, a, b, tol = 0.0001, max_iter = 1000):
     #Retornamos el valor a la solucion mas cercano
     return (a+b)/2, abs((b-a)/2), count
 
+#Complejidad Algoritmo: 
+#   Tiempo O(log((b-a)/tol)), dado que cada vez el itervalo se parte a la mitad: (b-a)/2**n <= tol
+#   Espacio O(1), constante 
